@@ -48,7 +48,11 @@ k8s
 
 ### 组件开发需要修改的文件
 
-1. 组件开发
+1. 拓展插件安装
+
+[安装地址](https://devtools.vuejs.org/guide/installation.html)
+
+2. 组件开发
 
 ```ts
 <script setup lang="ts">
@@ -57,11 +61,10 @@ k8s
 
 具体的示例可以参考**src/components/CompositionComponent.vue**组件
 
-2. 状态管理
+3. 状态管理
 
 相关的代码都在 **src/store/user**目录下
 配置的相关步骤在**src/store/index.ts**内标注了步骤
-
 
 ## 注
 现在的功能相对来说比较简单，后期会加入更多的功能
