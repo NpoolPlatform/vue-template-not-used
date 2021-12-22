@@ -22,8 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+import { ref, defineAsyncComponent } from 'vue'
+const EssentialLink = defineAsyncComponent(() => import('components/EssentialLink.vue'))
 
 const linksList = [
   {

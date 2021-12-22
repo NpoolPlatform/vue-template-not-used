@@ -29,10 +29,11 @@ interface CommonError {
 }
 
 const post = async <T, R> (url: string, data: T) => {
-  return await api.post<T, AxiosResponse<R>>(url, data)
+  return await api
+    .post<T, AxiosResponse<R>>(url, data)
     .then((data: AxiosResponse<R>) => data.data)
     .catch((err: AxiosError<CommonError>) => {
-      throw new Error(err.response?.data.message)
+      throw new Error(err.response?.data.message || err.message) // err.message is uncached error
     })
 }
 
