@@ -71,11 +71,17 @@ k8s
 配置的相关步骤在**src/store/index.ts**内标注了步骤
 
 4. 插件 Notify
-   Quasar Notify 的相关配置文件在**src/boot/notify-defaults.ts**文件中
-   具体使用方法在**src/store/user/action.ts**中做了标注
+Quasar Notify 的相关配置文件在**src/boot/notify-defaults.ts**文件中
+具体使用方法在**src/store/user/action.ts**中做了标注
 
 5. 导入模块
-   如果需要导入一些模块，例如图片等，需要在**src/shims-vue.d.ts**文件中添加模块声明
+如果需要导入一些模块，例如图片等，需要在**src/shims-vue.d.ts**文件中添加模块声明
+
+6. 类型声明
+在声明对象数组类型时，需要用到**Array<Object>**写法
+
+7. 组件调用
+在需要调用组件的地方，需要使用defineAsyncComponent，具体用法见**src/layouts/MayLayout.vue**文件中的用法
 
 ## 注
 
