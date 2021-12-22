@@ -24,15 +24,16 @@ const api = axios.create({
 
 // define common response handle
 interface CommonError {
-  code: number
-  message: string
+  code: number;
+  message: string;
 }
 
-const post = async <T, R> (url: string, data: T) => {
-  return await api.post<T, AxiosResponse<R>>(url, data)
+const post = async <T, R>(url: string, data: T) => {
+  return await api
+    .post<T, AxiosResponse<R>>(url, data)
     .then((data: AxiosResponse<R>) => data.data)
     .catch((err: AxiosError<CommonError>) => {
-      throw new Error(err.response?.data.message)
+      throw new Error(err.response?.data.message || err.message)
     })
 }
 
