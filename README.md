@@ -96,4 +96,5 @@ Quasar Notify 的相关配置文件在**src/boot/notify-defaults.ts**文件中
 + 测试
 + actions/mutations 参数自定义
 + Notify 前端调用方法实现
++ use pinia replace vuex
 + ...
