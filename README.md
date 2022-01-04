@@ -36,20 +36,20 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 Jenkinsfile
 
-- vue-template-webui -> your_project_name
++ vue-template-webui -> your_project_name
 
 nginx.template.conf
 
-- vue_template_error.log -> your_project_name_error.log
++ vue_template_error.log -> your_project_name_error.log
 
 k8s
 
-- 01-vue-template-webui.yaml -> your_project_name.yaml
-- vue-template-webui -> your_project_name
++ 01-vue-template-webui.yaml -> your_project_name.yaml
++ vue-template-webui -> your_project_name
 
 02-ingress.yaml
 
-- vue-template-webui -> your_project_name
++ vue-template-webui -> your_project_name
 
 ### 组件开发需要修改的文件
 
@@ -83,12 +83,18 @@ Quasar Notify 的相关配置文件在**src/boot/notify-defaults.ts**文件中
 7. 组件调用
 在需要调用组件的地方，需要使用defineAsyncComponent，具体用法见**src/layouts/MayLayout.vue**文件中的用法
 
+8. vscode 插件
+   + Vue 3 Snippets
+   + Vue Language Features (Volar)
+   + import-cost
+
 ## 注
 
 现在的功能相对来说比较简单，后期会加入更多的功能
 
-- 异步 API 的 pipe
-- 测试
-- actions/mutations 参数自定义
-- Notify 前端调用方法实现
-- ...
++ 异步 API 的 pipe
++ 测试
++ actions/mutations 参数自定义
++ Notify 前端调用方法实现
++ use pinia replace vuex
++ ...

@@ -1,7 +1,7 @@
 <template>
-  <q-item clickable tag="a" target="_blank" :href="link">
-    <q-item-section v-if="icon" avatar>
-      <q-icon :name="icon" />
+  <q-item clickable tag='a' target='_blank' :href='link'>
+    <q-item-section v-if='icon' avatar>
+      <q-icon :name='icon' />
     </q-item-section>
     <q-item-section>
       <q-item-label>{{ title }}</q-item-label>
@@ -10,7 +10,7 @@
   </q-item>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 import { defineProps, withDefaults, toRef } from 'vue'
 interface Props {
   title: string

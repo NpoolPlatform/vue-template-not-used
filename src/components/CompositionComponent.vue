@@ -1,10 +1,13 @@
 <template>
-  <div class="q-pa-md">
-    <q-table title="Users" :rows="users" :columns="columns" row-key="name" :loading="loading" />
+  <div class='q-pa-md'>
+    <q-table
+      title='Users' :rows='users' :columns='columns'
+      row-key='name' :loading='loading'
+    />
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 import { useStore } from 'src/store'
 import { ActionTypes } from 'src/store/users/action-types'
 import { MutationTypes } from 'src/store/users/mutation-types'
