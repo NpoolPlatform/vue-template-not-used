@@ -6,7 +6,7 @@ module.exports = {
   root: true,
 
   // https://eslint.vuejs.org/user-guide/#how-to-use-custom-parser
-  // Must use parserOptions instead of "parser" to allow vue-eslint-parser to keep working
+  // Must use parserOptions instead of 'parser' to allow vue-eslint-parser to keep working
   // `parser: 'vue-eslint-parser'` is already included with any 'plugin:vue/**' config and should be omitted
   parserOptions: {
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
@@ -41,7 +41,7 @@ module.exports = {
     // See https://eslint.vuejs.org/rules/#available-rules
     'plugin:vue/vue3-essential', // Priority A: Essential (Error Prevention)
     'plugin:vue/vue3-strongly-recommended', // Priority B: Strongly Recommended (Improving Readability)
-    'plugin:vue/vue3-recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
+    // 'plugin:vue/vue3-recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
 
     'standard'
 
@@ -81,24 +81,24 @@ module.exports = {
     'multiline-ternary': 'off',
 
     'no-unused-vars': 'off',
-    "eqeqeq": "error",
-    "no-var": "error",
-    "vue/html-quotes": ["error", "single"],
-    "vue/html-self-closing": ["error", {
-      "html": {
-        "void": "never",
-        "normal": "always",
-        "component": "always"
+    'eqeqeq': 'error',
+    'no-var': 'error',
+    'vue/html-quotes': ['error', 'single'],
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'never',
+        'normal': 'always',
+        'component': 'always'
       },
-      "svg": "always",
-      "math": "always"
+      'svg': 'always',
+      'math': 'always'
     }],
-    "vue/max-attributes-per-line": ["error", {
-      "singleline": {
-        "max": 4
+    'vue/max-attributes-per-line': ['error', {
+      'singleline': {
+        'max': 4
       },
-      "multiline": {
-        "max": 4
+      'multiline': {
+        'max': 4
       }
     }],
 
@@ -112,7 +112,7 @@ module.exports = {
     'prefer-promise-reject-errors': 'off',
 
     // TypeScript
-    quotes: ['error', 'single', { avoidEscape: true }],
+    quotes: ['error', 'single', { avoidEscape: true, 'allowTemplateLiterals': false }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],

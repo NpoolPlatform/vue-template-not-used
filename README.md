@@ -87,6 +87,9 @@ Quasar Notify 的相关配置文件在**src/boot/notify-defaults.ts**文件中
    + Vue 3 Snippets
    + Vue Language Features (Volar)
    + import-cost
+   + eslint
+      > 在任意 vue 组件文件中， ctrl+shift+p 输入 format document with 然后选择 eslint
+
 
 ## 注
 
